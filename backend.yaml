@@ -18,9 +18,11 @@ spec:
         ports:
         - containerPort: 5000
         env:
-        - name: MYSQL_HOST
+        - name: DB_HOST
           value: mysql-service
-        - name: MYSQL_USER
-          value: root
-        - name: MYSQL_PASSWORD
-          value: rootpass
+        - name: DB_USER
+          value: demo
+        - name: DB_PASSWORD
+          value: demo
+        - name: DB_NAME
+          value: phishing_database
